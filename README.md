@@ -1,2 +1,2 @@
-# digital_portfolio-template
-template for students to create a digital portfolio
+# Digital Portfolio
+This repository houses my digital portfolio and is set-up using Github pages.
