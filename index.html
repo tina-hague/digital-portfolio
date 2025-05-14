@@ -4,40 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Webpage Title (will show on tab) -->
-    <title>Professional Portfolio</title>
-    <style>
-        /* Basic styling for the page */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        nav {
-            margin: 1rem 0;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1rem;
-        }
-        section {
-            padding: 2rem;
-            border-bottom: 1px solid #ddd;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background: #333;
-            color: #fff;
-        }
-    </style>
+    <title>Tina Hague</title>
 </head>
 <body>
     <!-- Header Section -->
@@ -56,8 +23,7 @@
         <h2>About Me</h2>
         <p>
             <!-- Add a brief introduction about yourself here -->
-            Hello! My name is [Your Name]. I am passionate about [your interests or profession]. 
-            Welcome to my portfolio website!
+            Hello! My name is Tina Hague and I am a robotics student at Patrick Henry Highschool. 
         </p>
     </section>
 
@@ -68,6 +34,10 @@
             <!-- Add a list or description of your projects here -->
             Here are some of the projects I have worked on:
         </p>
+        <div class="popup" onclick="myFunction()">Click me!
+            <span class="popuptext" id="myPopup">Popup text...</span>
+        </div>
+        <!-- make each project a pop-up https://www.w3schools.com/howto/howto_js_popup.asp-->
         <ul>
             <li>Project 1: [Brief description] <a href="[link to project repository]" target="_blank">[Project repository]</a></li>
             <li>Project 2: [Brief description] <a href="[link to project repository]" target="_blank">[Project repository]</a></li>
@@ -87,6 +57,12 @@
             <li>Certification 3: [Details]</li>
             <!-- Add images of your certification digital badges -->
         </ul>
+
+        <p>
+            <!-- Add a link to your resume or CV -->
+            You can view my resume <a href="[link to your resume]" target="_blank">here</a>.
+
+        </p>
     </section>
 
     <!-- Contact Info Section -->
@@ -97,14 +73,29 @@
             Feel free to reach out to me:
         </p>
         <ul>
-            <li>Email: [your-email@example.com]</li>
-            <li>LinkedIn: <a href="[your-linkedin-profile]" target="_blank">[Your LinkedIn]</a></li>
+            <a href="link to email">
+                <img src="[link to email image]" alt="Gmail" style="width: 150px; height: auto;">
+            </a>
+            <a>
+                <img src="[link to LinkedIn image]" alt="LinkedIn" style="width: 150px; height: auto;">
+            </a>
+            <a>
+                <img src="[link to GitHub image]" alt="GitHub" style="width: 150px; height: auto;">
+            </a>
         </ul>
     </section>
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+
+        <p>&copy; 2025 Tina Hague. All rights reserved.</p>
     </footer>
 </body>
 </html>
+<script>
+    // JavaScript for pop-up functionality
+    function showPopup() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+    }
+</script>
