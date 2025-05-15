@@ -9,10 +9,11 @@
             padding: 0;
             line-height: 1.6;
         }
-        .bannerimage {
+        #bannerimage {
             width: 100%;
             background-image: url(banner.png);
-            height: 405px;
+            height: auto;
+            background-size: cover;
             background-position: center;
         }
         header {
@@ -105,7 +106,9 @@
 </head>
 <body>
     <!-- Banner Image -->
-    <div id="bannerimage"></div>
+    <div id="bannerimage">
+        <img src="banner.png" alt="Banner image"/>
+    </div>
     <!-- Header Section -->
     <header>
         <h1>Welcome to My Portfolio</h1>
