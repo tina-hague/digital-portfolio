@@ -48,6 +48,8 @@
             color: #00bbff;
             text-decoration: none;
             margin: 0 1rem;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
         }
         section {
             padding: 2rem;
@@ -60,9 +62,10 @@
         footer {
             text-align: center;
             padding: 1rem;
-            background: #333;
-            color: #fff;
+            background: #0f133c;
+            color: #00bbff;
             font-size: 0.8em;
+            font-family: 'Source Code Pro', monospace;
         }
 
         /* Popup container */
@@ -123,7 +126,7 @@
     <!-- Webpage Title (will show on tab) -->
     <title>Tina Hague</title>
 </head>
-<body>
+<body style="background-color: #171521; color: #cfb8ff; font-family: 'Source Code Pro', monospace;">
     <!-- Banner Image -->
     <!-- Header Section -->
     <header>
@@ -140,7 +143,9 @@
         <h2>About Me</h2>
         <p>
             <!-- Add a brief introduction about yourself here -->
-            Hello! My name is Tina Hague and I am a robotics student at Patrick Henry Highschool. 
+            My name is Tina Hague and I am a robotics student at Patrick Henry Highschool. I am a programmer for FRC team 4738,
+             the Patribots, and I am interested in the analogies between the brain and computers. I enjoy the outdoors, whether playing field hockey, lacrosse, going on a walk,
+             or using a drone to view the Earth from above.
         </p>
     </section>
 
@@ -151,13 +156,17 @@
             <!-- Add a list or description of your projects here -->
             Here are some of the projects I have worked on:
         </p>
-        <div class="popup" onclick="showPopup()">Click me!
+
+
+        <!-- <div class="popup" onclick="showPopup()">Click me!
             <span class="popuptext" id="myPopup">Popup text...</span>
-        </div>
+        </div> -->
+
+
         <!-- make each project a pop-up https://www.w3schools.com/howto/howto_js_popup.asp-->
         <ul>
-            <li>Project 1: [Brief description] <a href="[link to project repository]" target="_blank">[Project repository]</a></li>
-            <li>Project 2: [Brief description] <a href="[link to project repository]" target="_blank">[Project repository]</a></li>
+            <li> <a href="https://github.com/tina-hague/Tetris" target="_blank" style="color: white">Tetris</a></li>: This was my attempt to create a mimic of the original Tetris game that I made for my APCSA final.
+            <li> <a href="https://github.com/tina-hague/Shape-Calculator" target="_blank" style="color: white"> Shape Calculator </a></li>: This was my first Java program and it takes user input to calculate the surface area and volume of a 3D or 2D shape.
         </ul>
     </section>
 
@@ -169,17 +178,10 @@
             I have earned the following certifications and achievements:
         </p>
         <ul>
-            <li>Certification 1: [Details]</li>
-            <li>Certification 2: [Details]</li>
-            <li>Certification 3: [Details]</li>
+            <li>TRUST Certification: permits recreational flight of an sUAS</li>
+            <li>CFR 14 Part 107 License: permits commercial flight of an sUAS</li>
             <!-- Add images of your certification digital badges -->
         </ul>
-
-        <p>
-            <!-- Add a link to your resume or CV -->
-            You can view my resume <a href="[link to your resume]" target="_blank">here</a>.
-
-        </p>
     </section>
 
     <!-- Contact Info Section -->
