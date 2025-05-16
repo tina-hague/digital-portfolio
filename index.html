@@ -28,6 +28,12 @@
   background-size: cover;
 }
 
+    contacts {
+        align-items: center;
+        font-family: 'Times New Roman', Times, serif;
+        color: #cfb8ff;
+        display: inline-flex;
+    }
 
 
 
@@ -53,12 +59,12 @@
         }
         section {
             padding: 2rem;
-            border-bottom: 1px solid #00bbff;
+            border-bottom: 1px solid #1f3036;
         }
         /* enlarge the icon that you hover over https://success.appen.com/hc/en-us/articles/202703155-CSS-Guide-to-Enlarge-Images-on-Hover */
-        contact { 
+        /* contact { 
             align-items: right;
-        }
+        } */
         footer {
             text-align: center;
             padding: 1rem;
@@ -128,7 +134,7 @@
     <!-- Webpage Title (will show on tab) -->
     <title>Tina Hague</title>
 </head>
-<body style="background-color: #171521; color: #cfb8ff; font-family: 'Source Code Pro', monospace;">
+<body style="background-color: #171521; color: #cfb8ff; font-family: 'Source Code Pro', monospace; font-size: large;">
     <!-- Banner Image -->
     <!-- Header Section -->
     <header>
@@ -188,22 +194,29 @@
 
     <!-- Contact Info Section -->
     <section id="contact">
-        <h2>Contact Info</h2>
-        <p>
-            <!-- Add your contact information here -->
-            Feel free to reach out to me:
-        </p>
-        <ul>
-            <a href="mailto:tina.hague42@example.com">
-                <img src="images/mail.png" alt="Gmail" style="width: 150px; height: auto; padding-left: 1rem; height: 80px; width: auto;">
-            </a>
-            <a href="https://www.linkedin.com/in/christina-hague-9382112b8/">
-                <img src="images/linkedin.png" alt="LinkedIn" style="width: 150px; height: auto; padding-left: 1rem; height: 80px; width: auto;">
-            </a>
-            <a href="https://github.com/tina-hague">
-                <img src="images/github.png" alt="GitHub" style="width: 150px; height: auto; padding-left: 1rem; height: 80px; width: auto;">
-            </a>
-        </ul>
+        <div style="align-items: center; justify-items: center;">
+            <h2>Contact Info</h2>
+        </div>
+        <div id="contacts" style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap;">
+            <div style="align-items: center; display: flex; padding-left: 0.5rem;">
+                <a href="mailto:tina.hague42@example.com" id="contacts" style="align-items: center;">
+                    <img src="images/mail.png" alt="Gmail" style="width: 150px; height: auto; height: 80px; width: auto;">
+                </a>
+                <h5 style="align-items: center;">TINA.HAGUE42@GMAIL.COM</h5>
+            </div>
+            <div style="align-items: center; display: flex; padding-left: 0.5rem;">
+                <a href="https://www.linkedin.com/in/christina-hague-9382112b8/" id="contacts" style="align-items: center;">
+                    <img src="images/linkedin.png" alt="LinkedIn" style="width: 150px; height: auto; height: 80px; width: auto;">
+                </a>
+                <h5 style="align-items: center;">LINKEDIN</h5>
+            </div>
+            <div style="align-items: center; display: flex; padding-left: 0.5rem;">
+                <a href="https://github.com/tina-hague" id="contacts">
+                    <img src="images/github.png" alt="GitHub" style="width: 150px; height: auto; height: 80px; width: auto;">
+                </a>
+                <h5 style="color: #cfb8ff;">GTHUB.COM/TINA-HAGUE</h5>
+            </div>
+        </div>
     </section>
 
     <!-- Footer Section -->
